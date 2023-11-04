@@ -1,0 +1,52 @@
+@keyframes logo_hover_in {
+    from { opacity: 1.0 }
+    to { opacity: 0.5 }
+  }
+  
+  @keyframes logo_hover_out {
+    from { opacity: 0.5 }
+    to { opacity: 1.0 }
+  }
+
+span.logo:hover {
+    animation-name: logo_hover_in;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+span.logo {
+    animation-name: logo_hover_out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 1.0;
+    font-size: xx-large;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Optional: Adjust the z-index as needed for layering */
+    transition: background-color 0.3s; /* Add a smooth background color transition */
+    background-color: white;
+}
+
+.header.sticky {
+    background-color: #000000; /* Change the background color when sticky */
+    /* Other sticky styles here */
+}
+
+.nav-button {
+    color: black
+}
+
+.nav-button.sticky {
+    color: white;
+}
+
+li.nav-button:hover {
+    color: #BD00B9;
+}
+
+li.nav-button.sticky:hover {
+    color: #A13782;
+}
