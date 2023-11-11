@@ -1,9 +1,18 @@
+import Image from "next/image";
 
+interface ShowInfo{
+    date:string,
+    venueName:string,
+    logoSrc:string,
+    description:string,
+    ticketURL:string,
+    is_sold_out:boolean
+}
 
-export function Show({ date, venueName, logoSrc, description, ticketURL, is_sold_out }) {
+export function Show({ date, venueName, logoSrc, description, ticketURL, is_sold_out }: ShowInfo) {
     return (
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-            <img src={ logoSrc } alt="Venue logo" className="h-80 bg-gray-500" />
+            <Image width={200} height={200} src={ logoSrc } alt="Venue logo" className="h-80 w-auto bg-gray-500" />
             <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
                 <span className="text-xs uppercase text-gray-600">{ date }</span>
                 <h3 className="text-3xl font-bold">{ venueName }</h3>

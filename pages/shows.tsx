@@ -13,7 +13,7 @@ export function Shows() {
                     <Show 
                         date={"November 10, 2023"}
                         venueName={"Drums N Flats (SOLD OUT) Tickets available at door"}
-                        logoSrc="venues/drums n flats logo.jpg"
+                        logoSrc="/venues/drums n flats logo.jpg"
                         description={ drumsDesc }
                         ticketURL={"https://singleapp.com/widgets/egifts/serveEGifts.php?id=20289&lang=en&mode=2&cache=1697815564&sa-web-page=live-music&render_full_page=1"}
                         is_sold_out={true}

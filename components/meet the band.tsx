@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from "next/image";
 
 export function MeetTheBand() {
     const memberData = [
@@ -12,10 +12,12 @@ export function MeetTheBand() {
       
       const memberElements = memberData.map((member, index) => (
         <div key={index} className="flex space-x-6">
-            <img
+            <Image
+                width={500} 
+                height={500}
                 alt={member.name}
                 className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm bg-gray-500"
-                src={`meet the band/${member.name}.jpg`}
+                src={`/meet the band/${member.name}.jpg`}
             />
             <div className="flex flex-col">
                 <h4 className="text-xl font-semibold">{member.name}</h4>
