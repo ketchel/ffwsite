@@ -33,7 +33,7 @@ export function Header({ scrollY = 100 }) {
         const page_dir = `/${page_name !== 'Home'? page_name.toLowerCase(): ""}`;
         const isActive = router.asPath === page_dir;
         return (
-            <div className="flex flex-col">
+            <div key={page_name} className="flex flex-col">
                 <li key={page_name} className={`nav-button ${isSticky? 'sticky': ''}`}>
                     <Link rel="noopener noreferrer" href={page_dir} className="flex items-center px-4 -mb-1 border-b-2 border-transparent">{ page_name }</Link>
                 </li>
