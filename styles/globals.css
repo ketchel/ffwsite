@@ -32,14 +32,3 @@ body {
   margin-right: auto;
   width: 50%;
 }
-
-button.sold-out{
-  opacity: 0.5;
-}
-
-button.sold-out:hover {
-  cursor: default;
-  content: "Sold Out!";
-}
-
-

@@ -25,14 +25,12 @@ span.logo {
 .header {
     position: sticky;
     top: 0;
-    z-index: 100; /* Optional: Adjust the z-index as needed for layering */
-    transition: background-color 0.3s; /* Add a smooth background color transition */
+    transition: background-color 0.3s;
     background-color: white;
 }
 
 .header.sticky {
-    background-color: #000000; /* Change the background color when sticky */
-    /* Other sticky styles here */
+    background-color: #000000;
 }
 
 .nav-button {
@@ -52,15 +50,22 @@ li.nav-button.sticky:hover {
 }
 
 li {
-    position: relative;
     margin-bottom: 0px;
     margin-top: 24px;
 }
   
 .tie {
-    position: relative;
-    display: block;
+    display: flex;
     max-width: 100%;
     margin-top: 2px;
-    left: 36%;
+}
+
+.mobile-menu {
+    font-size: large;
+    max-width: 60%;
+    display: flex;
+}
+
+.mobile-menu-overlay {
+    background-color: gold;
 }

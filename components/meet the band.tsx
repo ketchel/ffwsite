@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function MeetTheBand() {
     const memberData = [
-        { name: "Grant", instrument: "Lead Vocals" },
+        { name: "Grant", instrument: "Vocals" },
         { name: "Kenny", instrument: "Keys" },
         { name: "Liam", instrument: "Guitar" },
         { name: "Finn", instrument: "Drums" },
@@ -16,15 +16,13 @@ export function MeetTheBand() {
                 width={500} 
                 height={500}
                 alt={member.name}
-                className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm bg-gray-500"
+                className="flex-1 flex-shrink-0 object-cover h-60 mb-4 bg-center rounded-sm bg-gray-500"
+                style={{ maxWidth: '80%' }}
                 src={`/meet the band/${member.name}.jpg`}
             />
             <div className="flex flex-col">
                 <h4 className="text-xl font-semibold">{member.name}</h4>
                 <p className="text-sm text-gray-600">{member.instrument}</p>
-                <div className="flex mt-2 space-x-2">
-                    <p style={{color: '#F3F4F6'}}>________________</p>
-                </div>
             </div>
         </div>
       ));
